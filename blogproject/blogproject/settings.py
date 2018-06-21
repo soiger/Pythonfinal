@@ -25,7 +25,7 @@ SECRET_KEY = 'h^f+@_e%h5lkmrb#nh4#=w+0d)fs4s3k7nk3wf7m2_fkst!n67'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -86,7 +86,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'blog',        #数据库名字
-        'USER': 'root',          #账号
+        'USER': 'yzy',          #账号
         'PASSWORD': '123456',      #密码
         'HOST': '127.0.0.1',    #IP
         'PORT': '3306',                   #端口
