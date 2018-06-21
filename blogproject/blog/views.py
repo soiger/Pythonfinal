@@ -7,6 +7,9 @@ from .models import Post, Category
 def index(request):
     post_list = Post.objects.all().order_by('-created_time')
     return render(request,'blog/index.html',{'post_list':post_list})
+    
+def about(request):
+    return render(request,'blog/about.html')
 
 def detail(request, pk):
     post = get_object_or_404(Post, pk=pk)

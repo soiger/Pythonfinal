@@ -31,7 +31,7 @@
         <div class="row" background-image: url(\blog\img\title.jpg)>
             <div class="col-md-4 col-sm-5 col-xs-8" >
                 <div class="logo" >
-                    <h1><a href="{% url 'blog:index' %}"><b>人生如初见</a></h1>
+                    <h1><a href="{% url 'blog:index' %}"><b>若初见</a></h1>
                 </div>
             </div><!-- col-md-4 -->
             <div class="col-md-8 col-sm-7 col-xs-4">
@@ -46,7 +46,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="cl-effect-11"><a href="index.html" data-hover="首页">首页</a></li>
                             <li class="cl-effect-11"><a href="full-width.html" data-hover="博客">博客</a></li>
-                            <li class="cl-effect-11"><a href="about.html" data-hover="关于">关于</a></li>
+                            <li class="cl-effect-11"><a href="{% url 'blog:about'%}" data-hover="关于">关于</a></li>
                             <li class="cl-effect-11"><a href="contact.html" data-hover="联系">联系</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -165,7 +165,7 @@
         <div class="row">
             <div class="col-md-12">
                 <p class="copyright">
-                    <a href="http://zmrenwu.com/" title="期末作业" target="_blank">期末网页练习</a>
+                    <a href="{% url 'blog:index' %}" title="期末作业" target="_blank">期末网页练习</a>
                 </p>
             </div>
         </div>
@@ -177,7 +177,7 @@
     <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
     <nav>
         <ul>
-            <li><a href="index.html">首页</a></li>
+            <li><a href="{% url 'blog:index' %}">首页</a></li>
             <li><a href="full-width.html">博客</a></li>
             <li><a href="about.html">关于</a></li>
             <li><a href="contact.html">联系</a></li>
