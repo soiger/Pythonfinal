@@ -11,6 +11,9 @@ def index(request):
 def about(request):
     return render(request,'blog/about.html')
 
+def contact(request):
+    return render(request,'blog/contact.html')
+
 def detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.body = markdown.markdown(post.body,
