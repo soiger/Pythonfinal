@@ -1,6 +1,8 @@
 # Pythonfinal
 my website for my python lesson final exam
  
+本网站使用了Django框架。
+
 网站网址：http://www.yuzy.top/
 网站使用操作参加使用说明书。
  
