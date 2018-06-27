@@ -5,6 +5,9 @@ my website for my python lesson final exam
 # 网站查看 
 网站网址：http://www.yuzy.top/
 网站使用操作参加使用说明书。
+后台操作账号密码:
+teacher
+pythonexam
  
 # 相关说明
 本网站使用了Django框架。
